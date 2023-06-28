@@ -1,0 +1,31 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+
+.subscript {
+
+
+    position: relative;
+    margin: .6em 0;
+    width: 100%;
+
+    &::before, &::after {
+        // content: "- 添字 -";
+        // color: s.$tertiary-font-color;
+        font-size: .6em;
+        font-weight: normal;
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-family: cursive;
+
+
+    }
+
+    &::before {
+        top: -1.2em;
+    }
+
+    &::after {
+        bottom: -1.2em;
+    }
+}

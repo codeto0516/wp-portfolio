@@ -1,0 +1,48 @@
+[class*="flex"] {
+    display: flex;
+    
+}
+
+.flex {
+
+    &-row {
+        flex-direction: row;
+
+        &-center {
+            justify-content: center;
+        }
+    }
+
+    &-column {
+        flex-direction: column;
+
+        &-center {
+            align-items: center;
+        }
+    }
+
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+    &-gap {
+        &-8 { gap: .8rem; }
+        &-16 { gap: 1.6rem; }
+        &-32 { gap: 3.2rem; }
+        &-64 { gap: 6.4rem; }
+        &-96 { gap: 9.6rem; }
+        &-128 { gap: 12.8rem; }
+        &-160 { gap: 12.8rem; }
+        &-192 { gap: 19.2rem; }
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+
+    &-around {
+        justify-content: space-around;
+    }
+
+
+}

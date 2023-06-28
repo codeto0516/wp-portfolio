@@ -1,0 +1,82 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+
+
+
+.form {
+    align-items: center;
+    width: 100%;
+
+    
+
+    &-input, &-textarea, &-submit {
+        background: s.$primary-background-color;
+        border-radius: 2px;
+
+        max-width: 718px;
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+
+
+
+        @include m.sp {
+            font-size: 1.6rem;
+            position: relative;
+        }
+
+        &::placeholder {
+            color: #BCB5B5;
+            font-size: 2rem;
+            @include m.sp {
+                font-size: 1.6rem;
+            }
+        }
+
+    
+    }
+
+
+    &-outline {
+        outline: 2px solid;
+        outline-color: white;
+        outline-offset: 4px;
+    }
+
+
+    &-input {
+        padding: 2rem 3.2rem;
+        height: 5.6rem;
+    }
+
+    &-textarea {
+        padding: 3.2rem;
+        resize: vertical; // 拡張を縦軸だけに限定
+        resize: none;
+    }
+
+ 
+
+    &-submit {
+        background: s.$accent-color;
+        color: s.$secondary-font-color;
+
+        max-width: 37rem;
+        height: 7.7rem;
+        margin-top: 3.2rem;
+        border: none;
+
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+        
+        @include m.hover_zoomup();
+    }
+}
+
+
+
+
+
+
+

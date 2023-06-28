@@ -1,0 +1,38 @@
+
+
+
+.smooth {
+
+    &_up, &_left, &_right {
+        transition: 0.8s ease-in-out;
+        opacity: 0;
+
+        &.on {
+            transform: translate(0);
+            opacity: 1.0;
+        }
+    }
+
+    &_up {
+        transform: translateY(30px);
+    }
+
+    &_left {
+        transform: translateX(-30px);
+    }
+
+    &_right {
+        transform: translateX(30px);
+    }
+}
+
+.smooth_up_slow {
+    transition: 1s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+
+    &.on {
+        transform: translate(0);
+        opacity: 1.0;
+    }
+}

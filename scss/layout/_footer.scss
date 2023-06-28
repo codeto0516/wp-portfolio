@@ -1,0 +1,17 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+
+/// //////////////////////////////////////////////////////////////////////////////////
+// フッター
+//////////////////////////////////////////////////////////////////////////////////////
+footer {
+    width: 100%;
+    height: 4rem;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #23221f;
+    color: s.$secondary-font-color;
+    padding: 3.2rem;
+}

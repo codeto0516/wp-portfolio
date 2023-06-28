@@ -1,0 +1,53 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+//////////////////////////////////////////////////////////////////////////////////
+// 共通
+//////////////////////////////////////////////////////////////////////////////////
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+
+    // フォント
+    font-family: s.$font-family;
+    color: s.$primary-font-color;
+    font-size: 10px; // rem用
+    @include m.sp {font-size: 9px;}
+
+    // スムーススクロール
+    scroll-behavior: smooth; // スムーススクロール
+    scroll-padding-top: 100px; // スムーススクロールの位置調整
+}
+ 
+body {
+    background: s.$primary-background-color;
+    min-height: 100%; // footerを最下部に固定するため
+    overflow-x: hidden; // 横スクロール防止
+    font-size: 1.6rem;
+}
+
+h {
+    &1,&2,&3,&4,&5,&6 { font-weight: bold; }
+    &1 { font-size: 4.6rem; }
+    &2 { 
+        font-size: 3.2rem; 
+        @include m.sp { font-size: 2.4rem; }
+    }
+    &3 { font-size: 2.0rem; }
+    &4, &5, &6 { font-size: 1.6rem; }
+}
+
+p {
+    // letter-spacing: .05rem;
+    line-height: 2;
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,37 @@
+
+@use '../setting' as s;
+
+
+//////////////////////////////////////////////////////////////////////////////////
+// メディアクエリ
+//////////////////////////////////////////////////////////////////////////////////
+@mixin pc {
+    @media screen and (max-width: (s.$pc)) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: (s.$tab)) {
+        @content;
+    }
+}
+  
+@mixin sp {
+    @media screen and (max-width: (s.$sp)) {
+        @content;
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////
+// その他
+//////////////////////////////////////////////////////////////////////////////////
+@mixin hover_zoomup($scale: 1.02, $cursor: pointer) {
+    &:hover {
+        cursor: $cursor;
+        transform: scale($scale);
+        transition: all .3s ease 0s;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,35 @@
+@use '../../mixin' as m;
+@use '../../setting' as s;
+
+// 経験・経歴 ///////////////////////////////////////////////
+.experience {
+
+    .subscript::before {
+        content: "- Experience -"
+    }
+
+
+    &-section {
+        text-align: left;
+        padding: 3.2rem 3.2rem;
+        border-radius: 5px;
+        box-sizing: content-box;
+
+        @include m.tab {
+            padding: 1.6rem 0;
+        }
+
+        &-duration {
+            color: s.$primary-color;
+            font-weight: bold;
+        }
+
+        &-title {
+
+        }
+
+        &-description {
+            color: s.$tertiary-font-color;
+        }
+    }
+}

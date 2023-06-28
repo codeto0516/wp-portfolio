@@ -1,0 +1,47 @@
+@use '../../mixin' as m;
+@use '../../setting' as s;
+
+
+// スキル・資格 ///////////////////////////////////////////////
+.skills {
+    .subscript::before {
+        content: "- Skills・Qualifications -"
+    }
+
+    &-list {
+
+        &-category {
+            max-width: 30rem;
+            width: 100%;
+            padding: 8px 0;
+            background: #000000;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        &-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            width: 100%;
+            
+            @include m.tab {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &-item {
+            text-align: left;
+
+            &-body {
+                list-style-type: circle;
+                padding-left: 2rem;
+                line-height: 1.5;
+                color: s.$tertiary-font-color;
+            }
+        }
+    }   
+}
+

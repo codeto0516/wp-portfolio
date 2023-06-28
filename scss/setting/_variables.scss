@@ -1,0 +1,36 @@
+//////////////////////////////////////////////////////////////////////////////////
+// カラー
+//////////////////////////////////////////////////////////////////////////////////
+
+// 配色
+$primary-color: #4D4B89;
+$secondary-color: #FFFFFF; 
+$accent-color: #C14E4E;
+
+// 背景
+// $primary-background-color: #EEF1F6;
+$primary-background-color: #F8F7F6;
+$secondary-background-color: #FFFFFF;
+
+// フォントカラー
+$primary-font-color: #23221e; // #333333 
+$secondary-font-color: #FFFFFF;
+$tertiary-font-color: #5e5e5e; // #A4A4A4
+
+// ホバー時のカラー
+$primary-hover-color: #0071c1;
+ 
+
+//////////////////////////////////////////////////////////////////////////////////
+// その他
+//////////////////////////////////////////////////////////////////////////////////
+$font-family: Helvetica Neue,Helvetica,Arial,Segoe UI,YuGothic,Yu Gothic,Hiragino Sans,ヒラギノ角ゴ ProN,Hiragino Kaku Gothic ProN,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,MS Pゴシック,MS PGothic,sans-serif;
+
+
+// コンテナ最大幅
+$container-width: 1024px;
+
+// メディアクエリ
+$pc: 1180px;
+$tab: 768px;
+$sp: 375px;

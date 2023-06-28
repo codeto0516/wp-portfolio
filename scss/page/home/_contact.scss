@@ -1,0 +1,40 @@
+@use '../../mixin' as m;
+@use '../../setting' as s;
+
+// お問い合わせ ///////////////////////////////////////////////
+.contact {
+
+    // background: s.$primary-background-color;
+    background: #23221f;
+    padding-top: 6.4rem;
+    padding-bottom: 19.2rem;
+
+    .subscript {
+        color: s.$secondary-font-color;
+    }
+
+    .container {
+        max-width: 880px; // フォームの最大横幅
+    }   
+
+    &-outline {
+
+    }
+
+    &-image {
+        width: 14rem;
+        aspect-ratio: 1/1;
+        
+        object-fit: cover;
+
+
+        border-radius: 100%;
+        overflow: hidden;
+
+        img {
+            fill: white;
+        }
+        
+    }
+
+}

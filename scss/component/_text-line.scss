@@ -1,0 +1,8 @@
+.leftline {
+    &::before {
+        content: "";
+        border-left: .2em solid;
+        padding-left: .8rem;
+    }
+
+}

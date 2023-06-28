@@ -1,0 +1,20 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+
+.container {
+    width: min(100% - 10rem, s.$container-width);
+
+    @include m.tab {
+        width: min(100% - 8rem, s.$container-width);
+    }
+    @include m.sp {
+        width: min(100% - 4rem, s.$container-width);
+    }
+    margin-inline: auto;
+    display: flex;
+    align-items: center; // 縦中央寄せ
+    justify-content: center; // 横中央寄せ
+    text-align: center; // テキスト中央寄せ
+    height: 100%;
+    
+}

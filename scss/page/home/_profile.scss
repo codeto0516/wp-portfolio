@@ -1,0 +1,47 @@
+@use '../../mixin' as m;
+@use '../../setting' as s;
+
+// プロフィール ///////////////////////////////////////////////
+.profile {
+
+
+    padding-top: 24vh;
+    @include m.sp {
+        padding-top: 20vh;
+    }
+
+    &-image {
+        width: 16rem;
+        aspect-ratio: 1/1;
+        
+        object-fit: cover;
+
+
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    &-info {
+        font-size: 2rem;
+        
+        
+        .subscript::after {
+            content: "- Taisei Ogawa -";
+        }
+        
+
+        &-tags {
+            .square {
+                background: #000;
+                font-size: 1.2rem;
+                font-weight: normal;
+            }
+        }
+    }
+
+    &-greeting {
+        max-width: 641px;
+        text-align: left;
+    }
+}
+

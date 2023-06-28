@@ -1,0 +1,32 @@
+@use '../setting' as s;
+@use '../mixin' as m;
+
+.square {
+    padding: 8px 16px;
+    border-radius: 2px;
+    line-height: 1em;
+    
+    background: #000000;
+    color: #ffffff;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    
+    
+    
+
+    &-radius {
+        @extend .square;
+        border-radius: 9999px;
+    }
+}
+
+.button {
+    @extend .square;
+
+    @include m.hover_zoomup();
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
