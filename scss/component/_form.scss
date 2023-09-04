@@ -1,24 +1,20 @@
-@use '../setting' as s;
-@use '../mixin' as m;
-
-
+@use "../setting" as s;
+@use "../mixin" as m;
 
 .form {
     align-items: center;
     width: 100%;
 
-    
-
-    &-input, &-textarea, &-submit {
+    &-input,
+    &-textarea,
+    &-submit {
         background: s.$primary-background-color;
         border-radius: 2px;
 
         max-width: 718px;
-        width: 100%;
+        width: calc(100vw - 3.2rem);
         text-align: left;
         font-size: 2rem;
-
-
 
         @include m.sp {
             font-size: 1.6rem;
@@ -26,23 +22,19 @@
         }
 
         &::placeholder {
-            color: #BCB5B5;
+            color: #bcb5b5;
             font-size: 2rem;
             @include m.sp {
                 font-size: 1.6rem;
             }
         }
-
-    
     }
-
 
     &-outline {
         outline: 2px solid;
         outline-color: white;
         outline-offset: 4px;
     }
-
 
     &-input {
         padding: 2rem 3.2rem;
@@ -54,8 +46,6 @@
         resize: vertical; // 拡張を縦軸だけに限定
         resize: none;
     }
-
- 
 
     &-submit {
         background: s.$accent-color;
@@ -69,14 +59,28 @@
         font-size: 2rem;
         text-align: center;
         font-weight: bold;
-        
+
         @include m.hover_zoomup();
     }
 }
 
+.wpcf7-response-output {
+    color: white;
+}
 
+.wpcf7-not-valid-tip {
+    color: black !important;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    position: absolute !important;
+    top: 4px !important;
+    right: 4px !important;
+    background: yellow !important;
+    padding: 4px 8px !important;
 
+    @include m.sp {
+        font-size: 1rem !important;
+        top: -4px !important;
+    }
 
-
-
-
+}

@@ -6,7 +6,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#F8F7F6">
     <meta name="h4eme-color" content="#F8F7F6">
     <title>小川太誠のポートフォリオ | Codeto</title>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <script src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/form.js"></script>
     <?php wp_head(); ?>
     
 </head>

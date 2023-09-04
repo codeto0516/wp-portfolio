@@ -156,12 +156,13 @@
 <article class="contact" id="contact">
     <div class="container flex-column flex-gap-64">
         <h2 class="subscript smooth_up">Contact</h2>
-        <form class="form flex-column flex-gap-32" action="#">
+        <?php echo do_shortcode( '[contact-form-7 id="546353b" title="コンタクトフォーム 1"]' ); ?>
+        <!-- <form class="form flex-column flex-gap-32" action="#">
             <input class="form-input form-outline smooth_up" type="text" id="name" name="name" placeholder="名前（必須）" required>
             <input class="form-input form-outline smooth_up"  type="email" id="email" name="email" placeholder="メールアドレス（必須）" required>
             <textarea class="form-textarea form-outline smooth_up" id="comment" cols="50" rows="5" name="comment" placeholder="お問い合わせ内容（必須）" required></textarea>
             <input class="form-submit button smooth_up" type="submit" value="送信する">
-        </form>
+        </form> -->
     </div>
 </article>
 
